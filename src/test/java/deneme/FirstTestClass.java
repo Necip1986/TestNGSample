@@ -1,3 +1,5 @@
+package deneme;
+
 import org.testng.annotations.Test;
 
 public class FirstTestClass {

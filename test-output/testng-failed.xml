@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="C:/Users/admin/IdeaProjects/TestNGSample(failed)">
+  <test thread-count="5" name="parametersTest1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://amazon.com"/>
     <classes>
-      <class name="SecondTestClass">
+      <class name="deneme.ParametersExample">
         <methods>
-          <include name="test2"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="logoTest"/>
         </methods>
-      </class> <!-- SecondTestClass -->
+      </class> <!-- deneme.ParametersExample -->
     </classes>
-  </test> <!-- C:/Users/admin/IdeaProjects/TestNGSample(failed) -->
+  </test> <!-- parametersTest1(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/admin/IdeaProjects/TestNGSample">
+    <test name="parametersTest1">
+
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://amazon.com"></parameter>
+
         <classes>
-            <class name="FirstTestClass"></class>
-            <class name="SecondTestClass"></class>
+            <class name="deneme.ParametersExample"/>
+        </classes>
+    </test>
+    <test name="parametersTest2">
+
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="url" value="https://amazon.com"></parameter>
+
+        <classes>
+            <class name="deneme.ParametersExample"/>
         </classes>
     </test>
 </suite>
