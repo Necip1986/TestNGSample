@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="parametersTest1(failed)">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="url" value="https://amazon.com"/>
+  <listeners>
+    <listener class-name="listeners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="C:/Users/admin/IdeaProjects/TestNGSample/src/test/java/listeners/ListenersTests.java(failed)">
     <classes>
-      <class name="deneme.ParametersExample">
+      <class name="listeners.ListenersTests">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="logoTest"/>
+          <include name="test3"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- deneme.ParametersExample -->
+      </class> <!-- listeners.ListenersTests -->
     </classes>
-  </test> <!-- parametersTest1(failed) -->
+  </test> <!-- C:/Users/admin/IdeaProjects/TestNGSample/src/test/java/listeners/ListenersTests.java(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
